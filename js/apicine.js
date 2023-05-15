@@ -1,9 +1,9 @@
 let pagina = 1;
 const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
-
+//se añaden 2 botones con un evento el cual pasara la siguiente página o anterior.
 btnSiguiente.addEventListener('click', () => {
-	if(pagina < 2){
+	if(pagina < 2){  //en esta linea mostramos las paginas con un if en este caso solo mostramos 2 pags traidas desde la api
 		pagina += 1;
 		cargarPeliculas();
 	}
@@ -17,7 +17,7 @@ btnAnterior.addEventListener('click', () => {
 });
 
 const cargarPeliculas = async() => {
-	try {
+	try {    //añadimos nuestra api en un try para que vaya recorriendo los datos solicitados
 		const respuesta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=192e0b9821564f26f52949758ea3c473&language=es-MX&page=${pagina}`);
 	
 		console.log(respuesta);
@@ -38,7 +38,7 @@ const cargarPeliculas = async() => {
 
 			document.getElementById('contenedor').innerHTML = peliculas;
 
-		} else if(respuesta.status === 401){
+		} else if(respuesta.status === 401){ //mensajes de consola
 			console.log('Pusiste la llave mal');
 		} else if(respuesta.status === 404){
 			console.log('La pelicula que buscas no existe');
