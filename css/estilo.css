@@ -23,6 +23,7 @@ header h1{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    border-radius: 10px;
     /* oculto lo que queda fuera del .contenedor */
     contain: paint;
     background-color: blue;
@@ -39,6 +40,7 @@ header h1{
     transition: .3s;
 }
 .contenedor .contenedor-items .item{
+    background-color: rgb(237, 219, 219);
     max-width: 200px;
     margin: auto;
     border: 1px solid #666;
@@ -47,6 +49,7 @@ header h1{
     transition: .3s;
 }
 .contenedor .contenedor-items .item .img-item{
+    border-radius: 10px;
     width: 100%;
 }
 .contenedor .contenedor-items .item:hover{
@@ -362,7 +365,7 @@ footer {
 }
 
 body {
-	background: var(--fondo);
+	background-color: rgb(237, 219, 219);
 	font-family: 'Open Sans', sans-serif;
 }
 
