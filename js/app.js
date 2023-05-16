@@ -202,10 +202,25 @@ function actualizarTotalCarrito(){
 
 }
 
-
-
-
-
+//Opción de ver más y ver menos
+function mostrarContenido(boton) {
+    var item = boton.parentNode;
+    var contenidoAdicional = item.querySelector('.contenido-adicional');
+    contenidoAdicional.style.display = 'block';
+    boton.style.display = 'none';
+    var verMenosBtn = item.querySelector('.ver-menos');
+    verMenosBtn.style.display = 'inline-block';
+  }
+  
+  function ocultarContenido(boton) {
+    var item = boton.parentNode;
+    var contenidoAdicional = item.querySelector('.contenido-adicional');
+    contenidoAdicional.style.display = 'none';
+    boton.style.display = 'none';
+    var verMasBtn = item.querySelector('.ver-mas');
+    verMasBtn.style.display = 'inline-block';
+  }
+//////////////////////////////////////////////////////////
 
 
 
