@@ -402,6 +402,16 @@ header nav a.activo {
 	color: #FFF;
 }
 
+.botonpelicula3 {
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.botonpelicula3:hover{ /*Cambiar color del botón al pasar el mouse*/
+    background-color: #E50914;
+
+}
+
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
 	font-size: 16px;
