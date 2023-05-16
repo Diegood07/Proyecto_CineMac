@@ -111,6 +111,7 @@ main {
 	border-radius: 3px;
 	cursor: pointer;
 	transition: .1s ease all;
+	text-align: center;
 }
 
 .formulario__btn:hover {
