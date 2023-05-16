@@ -39,8 +39,14 @@ function ready(){
     }
 
     //Agregamos funcionalidad al botón comprar
-    document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
+    document.getElementsByClassName('btn-pagar')[0].addEventListener('click',redireccionar)
 }
+
+//funcion que redirecciona al formulario
+function redireccionar() {
+    window.location.href = "formulario/index.html";
+  }
+
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
     alert("Gracias por la compra");
